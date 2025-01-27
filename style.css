@@ -1,0 +1,199 @@
+/* Main container styling */
+.main {
+    background-color: #0a192f;
+    padding: 2rem;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+/* Headers */
+h1, h2, h3 {
+    color: #00b4d8 !important;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px rgba(0, 180, 216, 0.3);
+}
+
+.header {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-left: 4px solid #00b4d8;
+    background: linear-gradient(90deg, rgba(0, 180, 216, 0.1), transparent);
+    border-radius: 0 10px 10px 0;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.header:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0 20px rgba(0, 180, 216, 0.2);
+}
+
+.subtitle {
+    color: #a8b2d1;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Sidebar styling */
+.sidebar .sidebar-content {
+    background-color: rgba(23, 42, 69, 0.95);
+    padding: 2rem;
+    border-right: 1px solid rgba(0, 180, 216, 0.2);
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+.stButton > button {
+    background: linear-gradient(45deg, #00b4d8, #0096c7);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 180, 216, 0.4);
+}
+
+.stButton > button:active {
+    transform: translateY(1px);
+}
+
+/* Progress bar styling */
+.stProgress > div > div {
+    background: linear-gradient(90deg, #00b4d8, #0096c7);
+    height: 8px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 180, 216, 0.3);
+}
+
+/* File uploader styling */
+.uploadedFile {
+    background-color: rgba(23, 42, 69, 0.7);
+    border: 2px dashed #00b4d8;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.uploadedFile:hover {
+    border-color: #0096c7;
+    box-shadow: 0 0 20px rgba(0, 180, 216, 0.3);
+    transform: scale(1.01);
+}
+
+/* Text elements */
+.stText, p {
+    color: #ffffff;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Info boxes */
+.stInfo {
+    background: linear-gradient(135deg, rgba(23, 42, 69, 0.9), rgba(23, 42, 69, 0.7));
+    border: 1px solid #00b4d8;
+    border-radius: 12px;
+    padding: 1.5rem;
+    color: #ffffff;
+    margin: 1rem 0;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Analytics panel */
+.analytics-panel {
+    background: linear-gradient(135deg, rgba(23, 42, 69, 0.8), rgba(23, 42, 69, 0.6));
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid rgba(0, 180, 216, 0.3);
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.analytics-panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation for loading elements */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px #00b4d8; }
+    50% { box-shadow: 0 0 20px #00b4d8; }
+    100% { box-shadow: 0 0 5px #00b4d8; }
+}
+
+.loading {
+    animation: glow 2s infinite;
+}
+
+/* Radio buttons */
+.stRadio > div {
+    background: rgba(23, 42, 69, 0.8);
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 180, 216, 0.2);
+    transition: all 0.3s ease;
+}
+
+.stRadio > div:hover {
+    border-color: #00b4d8;
+    box-shadow: 0 0 15px rgba(0, 180, 216, 0.2);
+}
+
+/* Divider */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 180, 216, 0.2), transparent);
+    margin: 2rem 0;
+}
+
+/* Video container */
+.stVideo {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.stVideo:hover {
+    transform: scale(1.02);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(23, 42, 69, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00b4d8;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0096c7;
+}
